@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: sans-serif;
+    background-color: theme('colors.gray.100');
+    color: theme('colors.gray.700');
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+textarea,
+select,
+button {
+    transition: all 0.2s ease-in-out;
+}
+
+input,
+textarea,
+select {
+    @apply shadow appearance-none border border-gray-300 rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500;
+}
+
+input.error,
+textarea.error,
+select.error {
+    @apply border-red-500 focus:border-red-500;
+}
