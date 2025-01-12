@@ -1,0 +1,24 @@
+{
+  "commands": {
+    "start-dev": {
+      "command": "npm run dev",
+      "description": "Starts the application in development mode"
+    },
+    "start-prod": {
+      "command": "npm start",
+      "description": "Starts the application in production mode"
+    },
+    "setup-db": {
+       "command": "mongosh < database/init.js",
+       "description": "Setup database using init file"
+     },
+    "build-frontend": {
+      "command": "cd client && npm run build && cd ..",
+      "description": "Build the frontend application"
+    },
+    "build-backend": {
+      "command": "npm run build:backend",
+      "description": "Build the backend application"
+    }
+  }
+}
